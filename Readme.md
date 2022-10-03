@@ -20,4 +20,4 @@ This website is divided into follwing sections :-
 
 ![Preview](./preview.png)
 
-### [Live link]() of the project
+### [Live link](https://bookmark-landing-page-rxeu.vercel.app/) of the project
