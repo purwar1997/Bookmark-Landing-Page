@@ -121,7 +121,7 @@
     </header>
 
     <!-- Features section -->
-    <section class="bg-lightGray">
+    <section class="relative bg-lightGray">
       <div class="container mx-auto px-10 py-20 md:px-20">
         <!-- Header -->
         <div class="text-center mx-auto xl:w-1/2">
@@ -134,13 +134,13 @@
         </div>
 
         <!-- Features List -->
-        <div class="mt-20 space-y-20 lg:mt-28 lg:space-y-24">
+        <div class="mt-20 space-y-28 lg:mt-28 xl:space-y-40 2xl:space-y-52">
           <!-- Feature 1 -->
           <div
             class="flex flex-col items-center gap-14 lg:flex-row lg:justify-between lg:gap-24"
           >
             <!-- Feature 1 illustration -->
-            <div class="lg:w-1/2">
+            <div class="z-10 lg:w-1/2">
               <img
                 src="./images/illustration-features-tab-1.png"
                 alt="feature-1"
@@ -161,6 +161,11 @@
                 More Info
               </button>
             </div>
+
+            <!-- Rounded rectangle -->
+            <div
+              class="hidden w-2/5 h-52 bg-blue rounded-r-full absolute top-[27%] left-0 lg:block xl:h-64 2xl:h-80 xl:top-[24%]"
+            ></div>
           </div>
 
           <!-- Feature 2 -->
@@ -182,12 +187,17 @@
             </div>
 
             <!-- Feature 2 illustration -->
-            <div class="lg:w-1/2">
+            <div class="z-10 lg:w-1/2">
               <img
                 src="./images/illustration-features-tab-2.png"
                 alt="feature-2"
               />
             </div>
+
+            <!-- Rounded rectangle -->
+            <div
+              class="hidden w-2/5 h-52 bg-blue rounded-l-full absolute top-[54%] right-0 lg:block xl:h-64 2xl:h-80"
+            ></div>
           </div>
 
           <!-- Feature 3 -->
@@ -195,7 +205,7 @@
             class="flex flex-col items-center gap-14 lg:flex-row lg:justify-between lg:gap-24"
           >
             <!-- Feature 3 illustration -->
-            <div class="lg:w-1/2">
+            <div class="z-10 lg:w-1/2">
               <img
                 src="./images/illustration-features-tab-3.png"
                 alt="feature-3"
@@ -215,6 +225,11 @@
                 More Info
               </button>
             </div>
+
+            <!-- Rounded rectangle -->
+            <div
+              class="hidden w-2/5 h-52 bg-blue rounded-r-full absolute top-[83%] left-0 lg:block xl:h-64 2xl:h-80"
+            ></div>
           </div>
         </div>
       </div>

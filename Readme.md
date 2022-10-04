@@ -18,6 +18,6 @@ This website is divided into following sections :-
 
 ### Preview of the project :-
 
-![Preview](<./previews/Screenshot%20(62).png>)
+![Preview](<./previews/Screenshot%20(69).png>)
 
 ### [Live link](https://bookmark-landing-page-rxeu.vercel.app/) of the project
