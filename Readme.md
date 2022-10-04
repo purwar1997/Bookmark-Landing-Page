@@ -6,18 +6,18 @@ This project is a landing page for a browser extension "Bookmark". It is created
 
 ## Components of a website
 
-This website is divided into follwing sections :-
+This website is divided into following sections :-
 
 - Navigation bar
 - Hero section
 - Features section
 - Download extensions section
 - FAQ section
-- Sign up section
+- Sign Up section
 - Footer
 
 ### Preview of the project :-
 
-![Preview](./preview.png)
+![Preview](<./previews/Screenshot%20(62).png>)
 
 ### [Live link](https://bookmark-landing-page-rxeu.vercel.app/) of the project

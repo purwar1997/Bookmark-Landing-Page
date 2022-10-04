@@ -1,0 +1,49 @@
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY();
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY();
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX();
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX();
+  }
+}
+
+@media (min-width: 1100px) {
+  nav {
+    animation: slideFromTop 700ms ease;
+  }
+
+  .hero-content {
+    animation: slideFromLeft 700ms ease;
+  }
+
+  .hero-image {
+    animation: slideFromRight 700ms ease;
+  }
+}

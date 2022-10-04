@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="icon" href="./images/icons8-bookmark-30.png" type="image/svg" />
 
     <!-- Linking font awesome library -->
@@ -16,15 +15,22 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="./animation.css" />
+
+    <!-- Linking Tailwind CSS library -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuring Tailwind CSS library -->
     <script>
       tailwind.config = {
         theme: {
           screens: {
-            sm: "450px",
+            sm: "640px",
             md: "750px",
             lg: "950px",
             xl: "1100px",
+            "2xl": "1300px",
           },
 
           extend: {
@@ -34,6 +40,7 @@
               darkBlue: "#242A45",
               gray: "#9196A5",
               lightGray: "#F7F7F7",
+              darkGray: "#DDDDDD",
             },
           },
         },
@@ -45,23 +52,26 @@
     <!-- Navbar -->
     <nav>
       <div
-        class="container max-w-[1300px] mx-auto px-10 pt-14 flex items-center justify-between md:px-20"
+        class="container mx-auto px-10 pt-14 flex items-center justify-between md:px-20"
       >
         <!-- Logo -->
-        <img class="w-48" src="./images/logo-bookmark.svg" alt="logo" />
+        <a href="#"
+          ><img class="w-48" src="./images/logo-bookmark.svg" alt="logo"
+        /></a>
 
-        <!-- Links -->
+        <!-- Navigation links -->
         <div class="hidden items-center space-x-12 lg:flex">
           <a class="text-xl" href="">Features</a>
           <a class="text-xl" href="">Pricing</a>
           <a class="text-xl" href="">Contact</a>
           <a
-            class="bg-red text-xl text-white px-6 py-2.5 rounded transition hover:opacity-70"
+            class="bg-red text-xl text-white px-6 py-2.5 rounded transition duration-300 hover:opacity-70"
             href=""
             >Login</a
           >
         </div>
 
+        <!-- Hamburger menu icon -->
         <a class="lg:hidden" href=""
           ><i class="text-2xl fa-solid fa-bars"></i
         ></a>
@@ -69,12 +79,12 @@
     </nav>
 
     <!-- Hero section -->
-    <div>
+    <header>
       <div
-        class="container max-w-[1300px] mx-auto px-10 py-24 flex flex-col-reverse items-center gap-16 xl:flex-row xl:justify-between xl:gap-24 md:px-20"
+        class="container mx-auto px-10 py-24 flex flex-col-reverse items-center gap-16 xl:flex-row xl:justify-between xl:gap-24 md:px-20"
       >
         <!-- Content -->
-        <div class="space-y-6 text-center xl:text-left xl:w-1/2">
+        <div class="hero-content space-y-6 text-center xl:text-left xl:w-1/2">
           <h1 class="text-4xl text-darkBlue md:text-5xl">
             A Simple Bookmark Manager
           </h1>
@@ -90,13 +100,13 @@
             class="flex justify-center flex-wrap gap-x-8 gap-y-5 xl:justify-start"
           >
             <button
-              class="bg-blue text-lg text-white px-5 py-3 rounded shadow-lg transition hover:bg-lightGray hover:text-black"
+              class="bg-blue text-lg text-white px-5 py-3 rounded shadow-lg transition duration-300 hover:bg-lightGray hover:text-black"
             >
               Get it on Chrome
             </button>
 
             <button
-              class="bg-lightGray text-lg text-black px-5 py-3 rounded shadow-lg transition hover:bg-blue hover:text-white"
+              class="bg-lightGray text-lg text-black px-5 py-3 rounded shadow-lg transition duration-300 hover:bg-blue hover:text-white"
             >
               Get it on Firefox
             </button>
@@ -104,15 +114,15 @@
         </div>
 
         <!-- Hero illustration -->
-        <div class="xl:w-1/2">
+        <div class="hero-image xl:w-1/2">
           <img src="./images/hero-bg.png" alt="hero-image" />
         </div>
       </div>
-    </div>
+    </header>
 
     <!-- Features section -->
-    <div class="bg-lightGray">
-      <div class="container max-w-[1300px] mx-auto px-10 py-20 md:px-20">
+    <section class="bg-lightGray">
+      <div class="container mx-auto px-10 py-20 md:px-20">
         <!-- Header -->
         <div class="text-center mx-auto xl:w-1/2">
           <h2 class="text-4xl">Features</h2>
@@ -146,7 +156,7 @@
                 manage your favourite sites.
               </p>
               <button
-                class="bg-blue text-lg text-white px-5 py-2 rounded shadow-lg transition hover:bg-lightGray hover:text-black"
+                class="bg-blue text-lg text-white px-5 py-2 rounded shadow-lg transition duration-300 hover:bg-lightGray hover:text-black"
               >
                 More Info
               </button>
@@ -165,7 +175,7 @@
                 time at all. No need to crawl through all of your bookmarks.
               </p>
               <button
-                class="bg-blue text-lg text-white px-5 py-2 rounded shadow-lg transition hover:bg-lightGray hover:text-black"
+                class="bg-blue text-lg text-white px-5 py-2 rounded shadow-lg transition duration-300 hover:bg-lightGray hover:text-black"
               >
                 More Info
               </button>
@@ -200,7 +210,7 @@
                 a shareable link that you can send at the click of a button.
               </p>
               <button
-                class="bg-blue text-lg text-white px-5 py-2 rounded shadow-lg transition hover:bg-lightGray hover:text-black"
+                class="bg-blue text-lg text-white px-5 py-2 rounded shadow-lg transition duration-300 hover:bg-lightGray hover:text-black"
               >
                 More Info
               </button>
@@ -208,13 +218,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Extensions section -->
-    <div>
-      <div
-        class="container max-w-[1300px] mx-auto px-10 pt-24 pb-24 md:px-20 xl:pb-36"
-      >
+    <section>
+      <div class="container mx-auto px-10 pt-24 pb-24 md:px-20 xl:pb-36">
         <!-- Header -->
         <div class="mx-auto text-center xl:w-1/2">
           <h2 class="text-3xl">Download the extension</h2>
@@ -226,7 +234,7 @@
 
         <!-- Cards section -->
         <div
-          class="mt-20 px-5 grid gap-16 lg:grid-cols-2 xl:grid-cols-3 md:px-10"
+          class="mt-20 px-5 grid gap-14 lg:grid-cols-2 xl:grid-cols-3 md:px-10 xl:px-6"
         >
           <!-- Card 1 -->
           <div class="bg-transparent rounded shadow-lg">
@@ -244,7 +252,7 @@
             <!-- Bottom card section -->
             <div class="p-6">
               <button
-                class="w-full bg-blue text-white py-3 rounded shadow-lg transition hover:bg-lightGray hover:text-black"
+                class="w-full bg-blue text-white py-3 rounded shadow-lg transition duration-300 hover:bg-lightGray hover:text-black"
               >
                 Add & Install Extension
               </button>
@@ -267,7 +275,7 @@
             <!-- Bottom card section -->
             <div class="p-6">
               <button
-                class="w-full bg-blue text-white py-3 rounded shadow-lg transition hover:bg-lightGray hover:text-black"
+                class="w-full bg-blue text-white py-3 rounded shadow-lg transition duration-300 hover:bg-lightGray hover:text-black"
               >
                 Add & Install Extension
               </button>
@@ -290,7 +298,7 @@
             <!-- Bottom card section -->
             <div class="p-6">
               <button
-                class="w-full bg-blue text-white py-3 rounded shadow-lg transition hover:bg-lightGray hover:text-black"
+                class="w-full bg-blue text-white py-3 rounded shadow-lg transition duration-300 hover:bg-lightGray hover:text-black"
               >
                 Add & Install Extension
               </button>
@@ -298,13 +306,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- FAQ section -->
-    <div class="bg-lightGray">
-      <div
-        class="container max-w-[1300px] mx-auto px-10 py-20 space-y-14 md:px-20"
-      >
+    <section class="bg-lightGray">
+      <div class="container mx-auto px-10 py-20 space-y-14 md:px-20">
         <!-- Header -->
         <div class="mx-auto text-center xl:w-3/5">
           <h2 class="text-3xl">Frequently Asked Questions</h2>
@@ -318,7 +324,7 @@
         <div class="mx-auto lg:w-2/3 xl:w-1/2">
           <!-- FAQ 1 -->
           <div
-            class="py-3 flex items-center justify-between gap-8 border-b-[1px] border-[#dddddd]"
+            class="py-3 flex items-center justify-between gap-8 border-b-[1px] border-darkGray"
           >
             <p class="text-lg">What is a Bookmark ?</p>
             <img class="w-4" src="./images/icon-arrow.svg" alt="arrow-icon" />
@@ -326,7 +332,7 @@
 
           <!-- FAQ 2 -->
           <div
-            class="py-3 flex items-center justify-between gap-8 border-b-[1px] border-[#dddddd]"
+            class="py-3 flex items-center justify-between gap-8 border-b-[1px] border-darkGray"
           >
             <p class="text-lg">How can I request a new browser ?</p>
             <img class="w-4" src="./images/icon-arrow.svg" alt="arrow-icon" />
@@ -334,7 +340,7 @@
 
           <!-- FAQ 3 -->
           <div
-            class="py-3 flex items-center justify-between gap-8 border-b-[1px] border-[#dddddd]"
+            class="py-3 flex items-center justify-between gap-8 border-b-[1px] border-darkGray"
           >
             <p class="text-lg">Is there a mobile app ?</p>
             <img class="w-4" src="./images/icon-arrow.svg" alt="arrow-icon" />
@@ -342,7 +348,7 @@
 
           <!-- FAQ 4 -->
           <div
-            class="py-3 flex items-center justify-between gap-8 border-b-[1px] border-[#dddddd]"
+            class="py-3 flex items-center justify-between gap-8 border-b-[1px] border-darkGray"
           >
             <p class="text-lg">What about other Chromium browsers ?</p>
             <img class="w-4" src="./images/icon-arrow.svg" alt="arrow-icon" />
@@ -350,18 +356,16 @@
         </div>
 
         <button
-          class="block mx-auto bg-blue text-white text-lg px-5 py-2 rounded shadow-lg transition hover:bg-lightGray hover:text-black"
+          class="block mx-auto bg-blue text-white text-lg px-5 py-2 rounded shadow-lg transition duration-300 hover:bg-lightGray hover:text-black"
         >
           More Info
         </button>
       </div>
-    </div>
+    </section>
 
     <!-- Sign-up section -->
-    <div class="bg-blue">
-      <div
-        class="container max-w-[1300px] mx-auto px-10 py-20 text-center space-y-7 md:px-20"
-      >
+    <section class="bg-blue">
+      <div class="container mx-auto px-10 py-20 text-center space-y-7 md:px-20">
         <h3 class="text-2xl text-white">35,000+ Already Joined</h3>
         <h2 class="text-3xl text-white">
           Stay up-to-date with what we are doing
@@ -380,7 +384,7 @@
               required
             />
             <button
-              class="w-full bg-red text-white text-lg px-5 py-2.5 rounded transition hover:bg-lightGray hover:text-black md:w-auto"
+              class="w-full bg-red text-white text-lg px-5 py-2.5 rounded transition duration-300 hover:bg-lightGray hover:text-black md:w-auto"
               type="submit"
             >
               Contact Us
@@ -388,17 +392,19 @@
           </div>
         </form>
       </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-darkBlue">
       <div
-        class="container max-w-[1300px] mx-auto px-10 py-8 flex flex-col items-center gap-8 lg:flex-row lg:justify-between md:px-24"
+        class="container mx-auto px-10 py-8 flex flex-col items-center gap-8 lg:flex-row lg:justify-between md:px-24"
       >
         <!-- Left section -->
         <div class="flex flex-col items-center gap-8 md:flex-row md:gap-16">
           <!-- Logo -->
-          <img src="./images/logo-bookmark-white.png" alt="logo" />
+          <a href="#"
+            ><img src="./images/logo-bookmark-white.png" alt="logo"
+          /></a>
 
           <!-- Footer links -->
           <nav class="space-x-10 text-white">
@@ -414,19 +420,19 @@
           <div class="space-x-8 text-white">
             <a href=""
               ><i
-                class="text-2xl transition hover:scale-125 fa-brands fa-twitter"
+                class="text-2xl transition duration-200 hover:scale-125 fa-brands fa-twitter"
               ></i
             ></a>
 
             <a href=""
               ><i
-                class="text-2xl transition hover:scale-125 fa-brands fa-square-facebook"
+                class="text-2xl transition duration-200 hover:scale-125 fa-brands fa-square-facebook"
               ></i
             ></a>
 
             <a href=""
               ><i
-                class="text-2xl transition hover:scale-125 fa-brands fa-instagram"
+                class="text-2xl transition duration-200 hover:scale-125 fa-brands fa-instagram"
               ></i
             ></a>
           </div>
