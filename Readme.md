@@ -1,5 +1,10 @@
 # Bookmark Landing Page
 
+![HTML](https://img.shields.io/badge/-HTML-red)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-blueviolet)
+![Responsive](https://img.shields.io/badge/-Responsive-green)
+![Landing Page](https://img.shields.io/badge/-Landing%20Page-yellow)
+
 ## Description
 
 This project is a landing page for a browser extension "Bookmark". It is created using `HTML` and `Tailwind CSS` and is responsive for both mobile and tablet screens.
