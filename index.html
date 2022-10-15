@@ -27,10 +27,9 @@
         theme: {
           screens: {
             sm: "640px",
-            md: "750px",
-            lg: "950px",
-            xl: "1100px",
-            "2xl": "1300px",
+            md: "850px",
+            lg: "1050px",
+            xl: "1250px",
           },
 
           extend: {
@@ -52,7 +51,7 @@
     <!-- Navbar -->
     <nav>
       <div
-        class="container mx-auto px-8 pt-14 flex items-center justify-between md:px-20"
+        class="container mx-auto px-8 pt-14 flex items-center justify-between lg:px-14"
       >
         <!-- Logo -->
         <a href="#"
@@ -65,7 +64,7 @@
           <a class="text-xl" href="">Pricing</a>
           <a class="text-xl" href="">Contact</a>
           <a
-            class="bg-red text-xl text-white px-6 py-2.5 rounded transition duration-300 hover:opacity-70"
+            class="bg-red text-xl text-white px-6 py-2.5 rounded transition duration-300 hover:opacity-75"
             href=""
             >Login</a
           >
@@ -81,11 +80,11 @@
     <!-- Hero section -->
     <header>
       <div
-        class="container mx-auto px-8 py-24 flex flex-col-reverse items-center gap-16 xl:flex-row xl:justify-between xl:gap-24 md:px-20"
+        class="container mx-auto px-8 py-24 flex flex-col-reverse items-center gap-16 lg:flex-row lg:justify-between lg:gap-24 md:px-14"
       >
         <!-- Content -->
-        <div class="hero-content space-y-6 text-center xl:text-left xl:w-1/2">
-          <h1 class="text-3xl text-darkBlue md:text-4xl lg:text-5xl">
+        <div class="hero-content space-y-6 text-center lg:text-left lg:w-1/2">
+          <h1 class="text-3xl text-darkBlue md:text-4xl xl:text-5xl">
             A Simple Bookmark Manager
           </h1>
 
@@ -97,7 +96,7 @@
 
           <!-- Buttons -->
           <div
-            class="flex justify-center flex-wrap gap-x-8 gap-y-5 xl:justify-start"
+            class="flex justify-center flex-wrap gap-x-8 gap-y-5 lg:justify-start"
           >
             <button
               class="bg-blue text-lg text-white px-5 py-3 rounded shadow-lg transition duration-300 hover:bg-lightGray hover:text-black"
@@ -114,7 +113,7 @@
         </div>
 
         <!-- Hero illustration -->
-        <div class="hero-image xl:w-1/2">
+        <div class="hero-image lg:w-1/2">
           <img src="./images/hero-bg.png" alt="hero-image" />
         </div>
       </div>
@@ -122,9 +121,9 @@
 
     <!-- Features section -->
     <section class="bg-lightGray relative">
-      <div class="container mx-auto px-8 py-20 md:px-20">
+      <div class="container mx-auto px-8 py-20 md:px-14">
         <!-- Header -->
-        <div class="text-center mx-auto xl:w-1/2">
+        <div class="text-center mx-auto lg:w-1/2">
           <h2 class="text-3xl sm:text-4xl">Features</h2>
           <p class="mt-5 text-lg text-gray">
             Our aim is to make it quick and easy for you to access your
@@ -134,7 +133,7 @@
         </div>
 
         <!-- Features List -->
-        <div class="mt-20 space-y-28 lg:mt-28 xl:space-y-40 2xl:space-y-52">
+        <div class="mt-20 space-y-28 md:mt-28 lg:space-y-52">
           <!-- Feature 1 -->
           <div
             class="flex flex-col items-center gap-14 lg:flex-row lg:justify-between lg:gap-24"
@@ -164,7 +163,7 @@
 
             <!-- Rounded rectangle -->
             <div
-              class="hidden w-2/5 h-52 bg-blue rounded-r-full absolute left-0 top-[27%] lg:block xl:h-64 xl:top-[24%] 2xl:h-80"
+              class="hidden w-2/5 h-64 bg-blue rounded-r-full absolute left-0 top-[24%] lg:block xl:h-80"
             ></div>
           </div>
 
@@ -196,7 +195,7 @@
 
             <!-- Rounded rectangle -->
             <div
-              class="hidden w-2/5 h-52 bg-blue rounded-l-full absolute right-0 top-[55%] lg:block xl:h-64 xl:top-[54%] 2xl:h-80"
+              class="hidden w-2/5 h-64 bg-blue rounded-l-full absolute right-0 top-[54%] lg:block xl:h-80"
             ></div>
           </div>
 
@@ -228,7 +227,7 @@
 
             <!-- Rounded rectangle -->
             <div
-              class="hidden w-2/5 h-52 bg-blue rounded-r-full absolute left-0 top-[83%] lg:block xl:h-64 2xl:h-80"
+              class="hidden w-2/5 h-64 bg-blue rounded-r-full absolute left-0 top-[84%] lg:block xl:h-80 xl:top-[83%]"
             ></div>
           </div>
         </div>
@@ -237,9 +236,9 @@
 
     <!-- Extensions section -->
     <section>
-      <div class="container mx-auto px-8 pt-24 pb-24 md:px-20 xl:pb-36">
+      <div class="container mx-auto px-8 pt-24 pb-24 md:px-14 lg:pb-36">
         <!-- Header -->
-        <div class="mx-auto text-center xl:w-1/2">
+        <div class="mx-auto text-center lg:w-2/3">
           <h2 class="text-3xl">Download the extension</h2>
           <p class="mt-5 text-lg text-gray">
             We have got more browsers in the pipeline. Please do let us know if
@@ -249,7 +248,7 @@
 
         <!-- Cards section -->
         <div
-          class="mt-20 px-5 grid gap-14 lg:grid-cols-2 xl:grid-cols-3 md:px-10 xl:px-6"
+          class="mt-20 px-5 grid gap-14 md:grid-cols-2 xl:grid-cols-3 md:px-10 lg:px-6"
         >
           <!-- Card 1 -->
           <div class="bg-transparent rounded shadow-lg">
@@ -325,9 +324,9 @@
 
     <!-- FAQ section -->
     <section class="bg-lightGray">
-      <div class="container mx-auto px-8 py-20 space-y-14 md:px-20">
+      <div class="container mx-auto px-8 py-20 space-y-14 md:px-14">
         <!-- Header -->
-        <div class="mx-auto text-center xl:w-3/5">
+        <div class="mx-auto text-center lg:w-3/5">
           <h2 class="text-2xl sm:text-3xl">Frequently Asked Questions</h2>
           <p class="mt-5 text-lg text-gray">
             Here are some of our FAQs. If you have any other questions you'd
@@ -336,7 +335,7 @@
         </div>
 
         <!-- FAQ List -->
-        <div class="mx-auto lg:w-2/3 xl:w-1/2">
+        <div class="mx-auto md:w-3/4 lg:w-1/2">
           <!-- FAQ 1 -->
           <div
             class="py-3 flex items-center justify-between gap-8 border-b-[1px] border-darkGray"
@@ -380,7 +379,7 @@
 
     <!-- Sign-up section -->
     <section class="bg-blue">
-      <div class="container mx-auto px-8 py-20 text-center space-y-7 md:px-20">
+      <div class="container mx-auto px-8 py-20 text-center space-y-7 md:px-14">
         <h3 class="text-2xl text-white">35,000+ Already Joined</h3>
         <h2 class="text-2xl text-white sm:text-3xl">
           Stay up-to-date with what we are doing
@@ -389,17 +388,17 @@
         <!-- Sign-up form -->
         <form action="">
           <div
-            class="flex flex-col items-center gap-5 md:flex-row md:justify-center"
+            class="flex flex-col items-center gap-5 sm:flex-row sm:justify-center"
           >
             <input
-              class="w-full px-4 py-3 rounded focus:outline-0 md:w-96"
+              class="w-full px-4 py-3 rounded focus:outline-0 sm:w-96"
               type="email"
               name="user-email"
               placeholder="Enter your email address"
               required
             />
             <button
-              class="w-full bg-red text-white text-lg px-5 py-2.5 rounded transition duration-300 hover:bg-lightGray hover:text-black md:w-auto"
+              class="w-full bg-red text-white text-lg px-5 py-2.5 rounded transition duration-300 hover:bg-lightGray hover:text-black sm:w-auto"
               type="submit"
             >
               Contact Us
@@ -412,7 +411,7 @@
     <!-- Footer -->
     <footer class="bg-darkBlue">
       <div
-        class="container mx-auto px-8 py-8 flex flex-col items-center gap-8 lg:flex-row lg:justify-between md:px-24"
+        class="container mx-auto px-8 py-8 flex flex-col items-center gap-8 lg:flex-row lg:justify-between md:px-14"
       >
         <!-- Left section -->
         <div class="flex flex-col items-center gap-8 md:flex-row md:gap-16">
