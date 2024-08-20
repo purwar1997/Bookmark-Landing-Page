@@ -1,17 +1,16 @@
 # Bookmark Landing Page
 
-![HTML](https://img.shields.io/badge/-HTML-red)
-![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-blueviolet)
-![Responsive](https://img.shields.io/badge/-Responsive-green)
-![Landing Page](https://img.shields.io/badge/-Landing%20Page-yellow)
+![HTML5](https://img.shields.io/badge/-HTML5-red)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-limegreen)
+![Responsive](https://img.shields.io/badge/-Responsive-mediumpurple)
 
 ## Description
 
-This project is a landing page for a browser extension "Bookmark". It is created using `HTML` and `Tailwind CSS` and is responsive for both mobile and tablet screens.
+This project is a landing page for a browser extension "Bookmark". It is built using `HTML` and `Tailwind CSS` and is responsive for both mobile and tablet screens.
 
-## Components of the website
+## Components of the landing page
 
-This website is divided into following sections :-
+This landing page is divided into following sections :-
 
 - Navigation bar
 - Hero section
@@ -21,8 +20,8 @@ This website is divided into following sections :-
 - Sign Up section
 - Footer
 
-### Preview of the project :-
+### Preview of the project
 
 ![Preview](<./previews/Screenshot%20(69).png>)
 
-### [Live link](https://bookmark-landing-page-rxeu.vercel.app/) of the project.
+### [Live link](https://bookmark-landing-page-red-two.vercel.app/) of the project.
