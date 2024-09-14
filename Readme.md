@@ -15,9 +15,9 @@ This landing page is divided into following sections :-
 - Navigation bar
 - Hero section
 - Features section
-- Download extensions section
+- Download extension section
 - FAQ section
-- Sign Up section
+- Signup section
 - Footer
 
 ### Preview of the project
